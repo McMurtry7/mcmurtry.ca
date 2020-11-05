@@ -28,6 +28,17 @@ p {
   /* z-index: 1; */
 }
 
+.feather {
+  height: 1rem;
+  margin-top: -4px;
+  pointer-events: none;
+  vertical-align: middle;
+  width: 1em;
+}
+
+::selection      {color: #fff; background: rgb(47,15,51);}
+::-moz-selection {color: #fff; background: rgb(47,15,51);}
+
 html, body {
   overflow: hidden;
   border-top: 4px solid rgb(47,15,51);
