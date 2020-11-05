@@ -36,6 +36,12 @@ p {
   width: 1em;
 }
 
+@media (min-width: 768px) {
+  .main-centre {
+    min-height: calc(100vh - 11px);
+  }
+}
+
 ::selection      {color: #fff; background: rgb(47,15,51);}
 ::-moz-selection {color: #fff; background: rgb(47,15,51);}
 
