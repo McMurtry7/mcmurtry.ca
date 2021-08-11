@@ -16,10 +16,6 @@
     background-position: top;
   }
 
-  &:hover .portfolio-project__screenshot-mobile {
-    transition: all 0.2s ease;
-  }
-
   &.right:hover .portfolio-project__screenshot-mobile {
     @media (min-width: 992px) {
       transform: rotate(3deg) translateY(-18px);
@@ -75,9 +71,12 @@
   &.western {
     .portfolio-project__screenshot-mobile {
       background-image: url('/images/content/portfolio/websites/western-electrical-mobile.jpg');
+      transition: all 1.4s ease;
     }
 
     background-image: url('/images/content/portfolio/websites/western-electrical-home.jpg');
+    transition: all 0.9s ease;
+    
     &::before { 
       @media (min-width: 992px) { 
         background-image: url('/images/content/portfolio/websites/western-electrical-services.jpg'); 
@@ -93,9 +92,12 @@
   &.bwd {
     .portfolio-project__screenshot-mobile {
       background-image: url('/images/content/portfolio/websites/blue-water-dental-mobile.jpg');
+      transition: all 1.4s ease;
     }
 
     background-image: url('/images/content/portfolio/websites/blue-water-dental-home.jpg');
+    transition: all 0.9s ease;
+    
     &::before { 
       @media (min-width: 992px) { 
         background-image: url('/images/content/portfolio/websites/blue-water-dental-services.jpg'); 
@@ -106,6 +108,94 @@
         background-image: url('/images/content/portfolio/websites/blue-water-dental-contact.jpg'); 
       }
     }
+  }
+
+  &.ci2 {
+    .portfolio-project__screenshot-mobile {
+      background-image: url('/images/content/portfolio/websites/ci2-group-mobile.jpg');
+      transition: all 1.4s ease;
+    }
+
+    background-image: url('/images/content/portfolio/websites/ci2-group-home.jpg');
+    transition: all 0.9s ease;
+    
+    &::before { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/ci2-group-offerings.jpg'); 
+      }
+    }
+    &::after  { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/ci2-group-contact.jpg'); 
+      }
+    }
+  }
+
+  &.smp {
+    .portfolio-project__screenshot-mobile {
+      background-image: url('/images/content/portfolio/websites/smp-engineering-mobile.jpg');
+      transition: all 1.4s ease;
+    }
+
+    background-image: url('/images/content/portfolio/websites/smp-engineering-home.jpg');
+    transition: all 0.9s ease;
+    
+    &::before { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/smp-engineering-project.jpg'); 
+      }
+    }
+    &::after  { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/smp-engineering-contact.jpg'); 
+      }
+    }
+  }
+
+  &.lightspace {
+    .portfolio-project__screenshot-mobile {
+      background-image: url('/images/content/portfolio/websites/lightspace-mobile.jpg');
+      transition: all 3.4s ease;
+    }
+
+    background-image: url('/images/content/portfolio/websites/lightspace-home.jpg');
+    transition: all 2.9s ease;
+    
+    &::before { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/lightspace-project.jpg'); 
+      }
+    }
+    &::after  { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/lightspace-specialist.jpg'); 
+      }
+    }
+  }
+
+  &.crs {
+    .portfolio-project__screenshot-mobile {
+      background-image: url('/images/content/portfolio/websites/canadian-retina-society-mobile.jpg');
+      transition: all 1.9s ease;
+    }
+
+    background-image: url('/images/content/portfolio/websites/canadian-retina-society-home.jpg');
+    transition: all 1.4s ease;
+    
+    &::before { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/canadian-retina-society-report.jpg'); 
+      }
+    }
+    &::after  { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/canadian-retina-society-archive.jpg'); 
+      }
+    }
+  }
+
+  &:hover .portfolio-project__screenshot-mobile {
+    transition: all 0.2s ease;
   }
 
   &.right {
@@ -134,7 +224,7 @@
 
   .portfolio-project__screenshot-mobile {
     width: 230px;
-    height: 410px;
+    height: 406px;
     background-color: lighten($black, 12%);
     border-radius: 21px;
     background-size: cover;
