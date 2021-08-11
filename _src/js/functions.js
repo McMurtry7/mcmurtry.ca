@@ -1,0 +1,1 @@
+console.log("He had a strange feeling as the slow gurgling stream slipped by: his old life lay behind in the mists, dark adventure lay in front.");

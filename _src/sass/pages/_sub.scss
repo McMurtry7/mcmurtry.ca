@@ -1,0 +1,167 @@
+/*----- \sub page -----*/
+
+.portfolio-project__screenshot {
+  position: relative;
+  width: 100%;
+  height: 525px;
+  border-radius: 6px;
+  background-color: lighten($black, 12%);
+  background-size: cover;
+  transition: all 0.9s ease;
+  
+  &[data-emergence=hidden] {
+    background-position: bottom;
+  }
+  &[data-emergence=visible] {
+    background-position: top;
+  }
+
+  &:hover .portfolio-project__screenshot-mobile {
+    transition: all 0.2s ease;
+  }
+
+  &.right:hover .portfolio-project__screenshot-mobile {
+    @media (min-width: 992px) {
+      transform: rotate(3deg) translateY(-18px);
+    }
+  }
+
+  &.left:hover .portfolio-project__screenshot-mobile {
+    @media (min-width: 992px) {
+      transform: rotate(-3deg) translateY(-18px);
+    }
+  }
+  
+  &::before,
+  &::after {
+    @media (min-width: 992px) {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0; bottom: 0; left: 0; right: 0;
+      background-color: lighten($black, 12%);
+      background-size: cover;
+      background-position: top;
+      border-radius: 6px;
+      transform-origin: 133% 133%;
+      transition: all 0.25s ease;
+    }
+  }
+  
+  &:hover::before,
+  &:hover::after {
+    box-shadow:
+      0 0.7px 2.2px rgba(0, 0, 0, 0.034),
+      0 1.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 3.1px 10px rgba(0, 0, 0, 0.06),
+      0 5.6px 17.9px rgba(0, 0, 0, 0.072),
+      0 10.4px 33.4px rgba(0, 0, 0, 0.086),
+      0 25px 80px rgba(0, 0, 0, 0.12)
+    ;
+  }
+
+  &:hover::before {
+    transform: rotate(5deg) scale(1.04);
+  }
+
+  &:hover::after {
+    transform: rotate(-5deg) scale(1.04);
+  }
+  
+  @media (max-width: 991px) {
+    height: 380px;
+  }
+
+  &.western {
+    .portfolio-project__screenshot-mobile {
+      background-image: url('/images/content/portfolio/websites/western-electrical-mobile.jpg');
+    }
+
+    background-image: url('/images/content/portfolio/websites/western-electrical-home.jpg');
+    &::before { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/western-electrical-services.jpg'); 
+      }
+    }
+    &::after  { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/western-electrical-project.jpg'); 
+      }
+    }
+  }
+
+  &.bwd {
+    .portfolio-project__screenshot-mobile {
+      background-image: url('/images/content/portfolio/websites/blue-water-dental-mobile.jpg');
+    }
+
+    background-image: url('/images/content/portfolio/websites/blue-water-dental-home.jpg');
+    &::before { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/blue-water-dental-services.jpg'); 
+      }
+    }
+    &::after  { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/blue-water-dental-contact.jpg'); 
+      }
+    }
+  }
+
+  &.right {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    
+    .portfolio-project__screenshot-mobile {
+      transform-origin: bottom right;
+      margin-bottom: -12px;
+      margin-right: -12px;
+    }
+  }
+
+  &.left {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    
+    .portfolio-project__screenshot-mobile {
+      transform-origin: bottom left;
+      margin-bottom: -12px;
+      margin-left: -12px;
+    }
+  }
+
+  .portfolio-project__screenshot-mobile {
+    width: 230px;
+    height: 410px;
+    background-color: lighten($black, 12%);
+    border-radius: 21px;
+    background-size: cover;
+    transition: all 1.3s ease;
+    border-top: 4px solid lighten($black, 18%);
+    border-bottom: 8px solid lighten($black, 6%);
+    border-left: 4px solid lighten($black, 18%);
+    border-right: 4px solid lighten($black, 6%);
+    
+    &[data-emergence=hidden] {
+      background-position: bottom;
+    }
+    &[data-emergence=visible] {
+      background-position: top;
+    }
+
+    @media (max-width: 991px) { 
+      width: 155px;
+      height: 276px;
+    }
+  }
+}
+
+.portfolio-project__info {
+  a {
+    font-size: 0.8rem;
+  }
+}
+
+/*----- \sub page -----*/

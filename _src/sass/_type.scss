@@ -1,0 +1,22 @@
+/*----- \type -----*/
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.brand-serif {
+  font-family: $brand-serif;
+  font-style: italic;
+}
+
+.brand-sans-serif {
+  font-family: $brand-sans-serif;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 0.75rem;
+}
+
+/*----- /type -----*/

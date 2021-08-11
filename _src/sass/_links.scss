@@ -1,0 +1,53 @@
+/*----- \links -----*/
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+main a:link:not(.btn):not(.no-link-style), main a:visited:not(.btn):not(.no-link-style) {
+  text-decoration: underline;
+  color: $brand-primary!important;
+  
+  -webkit-transition: all 100ms ease-out 0s;
+  transition: all 0.10s ease-out 0s;
+}
+
+main a:hover:not(.btn):not(.no-link-style), main a:active:not(.btn):not(.no-link-style) {
+  opacity: 0.7;
+}
+
+.fade-link:link:not(.btn):not(.no-link-style),
+.fade-link:visited:not(.btn):not(.no-link-style) {
+  color: inherit!important;
+  text-decoration: none!important;
+  background-color: transparent!important;
+  border-radius: 0;
+  padding: 0;
+  
+  -webkit-transition: all 200ms ease-out 0s;
+  transition: all 0.20s ease-out 0s;
+}
+
+.fade-link:hover:not(.btn):not(.no-link-style),
+.fade-link:active:not(.btn):not(.no-link-style) {
+  color: inherit!important;
+  text-decoration: none!important;
+  opacity: 0.7;
+  background-color: transparent;
+}
+
+.no-link-style:link, .no-link-style:visited, .no-link-style:hover, .no-link-style:active {
+  color: inherit!important;
+  background: none!important;
+  text-decoration: none!important;
+  border-bottom: none!important;
+  border-radius: 0!important;
+  text-shadow: none!important;
+  padding: 0!important;
+  opacity: 1!important;
+  
+  -webkit-transition: none;
+  transition: none;
+}
+
+/*----- /links -----*/
