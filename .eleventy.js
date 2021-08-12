@@ -21,6 +21,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./_src/js");
   eleventyConfig.addPassthroughCopy("./_src/libs");
 
+  eleventyConfig.addPassthroughCopy("./_src/robots.txt");
+  eleventyConfig.addPassthroughCopy("./_src/sitemap.xml");
+
   return {
     dir: {
       input: "_src",
