@@ -194,6 +194,27 @@
     }
   }
 
+  &.goharmonygo {
+    .portfolio-project__screenshot-mobile {
+      background-image: url('/images/content/portfolio/websites/goharmonygo-mobile.jpg');
+      transition: all 1.9s ease;
+    }
+
+    background-image: url('/images/content/portfolio/websites/goharmonygo-home.jpg');
+    transition: all 1.4s ease;
+    
+    &::before { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/goharmonygo-powerbi.jpg'); 
+      }
+    }
+    &::after  { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/goharmonygo-airplane.jpg'); 
+      }
+    }
+  }
+
   &:hover .portfolio-project__screenshot-mobile {
     transition: all 0.2s ease;
   }
@@ -252,6 +273,11 @@
   a {
     font-size: 0.8rem;
   }
+}
+
+.card.outline {
+  background-color: transparent;
+  border-color: $black;
 }
 
 /*----- \sub page -----*/

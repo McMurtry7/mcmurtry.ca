@@ -66,4 +66,20 @@ hr.dashed {
   }
 }
 
+.btn {
+  border-radius: 100px;
+  padding: .3rem 1.25rem .375rem;
+}
+
+.form-control {
+  background-color: transparent;
+  border-color: $black;
+
+  &:focus {
+    background-color: transparent;
+    border-color: #1a1e21;
+    box-shadow: 0 0 0 0.25rem rgb(66 70 73 / 50%);
+  }
+}
+
 /*----- /utility -----*/

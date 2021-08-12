@@ -31,7 +31,34 @@
 
 <body class="pt-3">
 
-  <nav class="navbar navbar-light navbar-expand-lg mb-4">
+  <nav class="navbar navbar-light navbar-expand-lg mb-4 mb-lg-5">
+    <div class="container">
+
+      <a class="navbar-brand fade-link" href="/">
+        <img src="/images/structure/logos/rrjm-monogram.svg" alt="Russell Ross James McMurtry">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item text-center">
+              <a class="nav-link {{ 'active' if '/about' in page.url }}" href="/about">about</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link {{ 'active' if '/portfolio' in page.url }}" href="/portfolio">portfolio</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link {{ 'active' if '/contact' in page.url }}" href="/contact">contact</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {# <nav class="navbar navbar-light navbar-expand-lg mb-4 mb-lg-5">
     <div class="container">
 
       <a class="navbar-brand fade-link" href="/">
@@ -65,7 +92,7 @@
 
       </div>
     </div>
-  </nav>
+  </nav> #}
   
   <main class="pb-5">
     <div class="container">
@@ -75,9 +102,9 @@
     </div>
   </main>
 
-  <footer class="text-center mb-4">
+  {# <footer class="text-center mb-4">
     <p class="text-muted"><small><script>document.write(new Date().getFullYear())</script> &bull; Always tinkering</small></p>
-  </footer>
+  </footer> #}
 
 </body>
 
