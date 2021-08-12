@@ -1,7 +1,7 @@
 {
-  "name": "ci2group-staticboiler",
-  "version": "1.0.0",
-  "description": "Static Website boiler for CDG projects",
+  "name": "mcmurtry.ca",
+  "version": "2.0.0",
+  "description": "Personal website for Russell McMurtry",
   "main": "index.js",
   "scripts": {
     "watch:sass": "sass --watch _src/sass:_site/css",
@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://ci2dev01/Ci2Development/Ci2Group-staticBoiler/_git/Ci2Group-staticBoiler"
+    "url": "https://github.com/McMurtry7/mcmurtry.ca/"
   },
-  "author": "Ci2 Group",
+  "author": "RRJM",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
