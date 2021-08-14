@@ -8,4 +8,4 @@
 2.  Use 'npm install' command to download dependancies from CL
 3.  Use 'npm start' comman to spool local server and build project to /_site/ folder (see .eleventy.js file for 11ty config options)
 
-### v1.0 Launched: 2021-08
+### v2.0 Launched: 2021-08
