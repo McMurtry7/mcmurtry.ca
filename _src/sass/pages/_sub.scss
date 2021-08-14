@@ -7,7 +7,7 @@
   border-radius: 6px;
   background-color: lighten($black, 12%);
   background-size: cover;
-  transition: all 0.9s ease;
+  transition: all 0.4s ease;
   
   &[data-emergence=hidden] {
     background-position: bottom;
@@ -67,15 +67,17 @@
   @media (max-width: 991px) {
     height: 380px;
   }
+  
+  @media (max-width: 480px) {
+    height: 280px;
+  }
 
   &.western {
     .portfolio-project__screenshot-mobile {
       background-image: url('/images/content/portfolio/websites/western-electrical-mobile.jpg');
-      transition: all 1.4s ease;
     }
 
     background-image: url('/images/content/portfolio/websites/western-electrical-home.jpg');
-    transition: all 0.9s ease;
     
     &::before { 
       @media (min-width: 992px) { 
@@ -92,11 +94,9 @@
   &.bwd {
     .portfolio-project__screenshot-mobile {
       background-image: url('/images/content/portfolio/websites/blue-water-dental-mobile.jpg');
-      transition: all 1.4s ease;
     }
 
     background-image: url('/images/content/portfolio/websites/blue-water-dental-home.jpg');
-    transition: all 0.9s ease;
     
     &::before { 
       @media (min-width: 992px) { 
@@ -113,11 +113,9 @@
   &.ci2 {
     .portfolio-project__screenshot-mobile {
       background-image: url('/images/content/portfolio/websites/ci2-group-mobile.jpg');
-      transition: all 1.4s ease;
     }
 
     background-image: url('/images/content/portfolio/websites/ci2-group-home.jpg');
-    transition: all 0.9s ease;
     
     &::before { 
       @media (min-width: 992px) { 
@@ -134,11 +132,9 @@
   &.smp {
     .portfolio-project__screenshot-mobile {
       background-image: url('/images/content/portfolio/websites/smp-engineering-mobile.jpg');
-      transition: all 1.4s ease;
     }
 
     background-image: url('/images/content/portfolio/websites/smp-engineering-home.jpg');
-    transition: all 0.9s ease;
     
     &::before { 
       @media (min-width: 992px) { 
@@ -155,20 +151,18 @@
   &.lightspace {
     .portfolio-project__screenshot-mobile {
       background-image: url('/images/content/portfolio/websites/lightspace-mobile.jpg');
-      transition: all 3.4s ease;
     }
 
     background-image: url('/images/content/portfolio/websites/lightspace-home.jpg');
-    transition: all 2.9s ease;
     
     &::before { 
       @media (min-width: 992px) { 
-        background-image: url('/images/content/portfolio/websites/lightspace-project.jpg'); 
+        background-image: url('/images/content/portfolio/websites/lightspace-specialist.jpg'); 
       }
     }
     &::after  { 
       @media (min-width: 992px) { 
-        background-image: url('/images/content/portfolio/websites/lightspace-specialist.jpg'); 
+        background-image: url('/images/content/portfolio/websites/lightspace-project.jpg'); 
       }
     }
   }
@@ -176,20 +170,18 @@
   &.crs {
     .portfolio-project__screenshot-mobile {
       background-image: url('/images/content/portfolio/websites/canadian-retina-society-mobile.jpg');
-      transition: all 1.9s ease;
     }
 
     background-image: url('/images/content/portfolio/websites/canadian-retina-society-home.jpg');
-    transition: all 1.4s ease;
     
     &::before { 
       @media (min-width: 992px) { 
-        background-image: url('/images/content/portfolio/websites/canadian-retina-society-report.jpg'); 
+        background-image: url('/images/content/portfolio/websites/canadian-retina-society-archive.jpg'); 
       }
     }
     &::after  { 
       @media (min-width: 992px) { 
-        background-image: url('/images/content/portfolio/websites/canadian-retina-society-archive.jpg'); 
+        background-image: url('/images/content/portfolio/websites/canadian-retina-society-board.jpg'); 
       }
     }
   }
@@ -197,11 +189,9 @@
   &.goharmonygo {
     .portfolio-project__screenshot-mobile {
       background-image: url('/images/content/portfolio/websites/goharmonygo-mobile.jpg');
-      transition: all 1.9s ease;
     }
 
     background-image: url('/images/content/portfolio/websites/goharmonygo-home.jpg');
-    transition: all 1.4s ease;
     
     &::before { 
       @media (min-width: 992px) { 
@@ -211,6 +201,7 @@
     &::after  { 
       @media (min-width: 992px) { 
         background-image: url('/images/content/portfolio/websites/goharmonygo-airplane.jpg'); 
+        background-position: bottom;
       }
     }
   }
@@ -245,11 +236,11 @@
 
   .portfolio-project__screenshot-mobile {
     width: 230px;
-    height: 406px;
+    height: 400px;
     background-color: lighten($black, 12%);
     border-radius: 21px;
     background-size: cover;
-    transition: all 1.3s ease;
+    transition: all 0.8s ease;
     border-top: 4px solid lighten($black, 18%);
     border-bottom: 8px solid lighten($black, 6%);
     border-left: 4px solid lighten($black, 18%);
@@ -264,7 +255,7 @@
 
     @media (max-width: 991px) { 
       width: 155px;
-      height: 276px;
+      height: 270px;
     }
   }
 }
