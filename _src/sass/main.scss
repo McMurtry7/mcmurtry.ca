@@ -1,0 +1,38 @@
+@import '_vars.scss';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: $font-size;
+  background-color: $off-white;
+  color: $black;
+}
+
+::selection      { color: $brand-primary;background: $brand-secondary; }
+::-moz-selection { color: $brand-primary;background: $brand-secondary; }
+
+// site-wide
+@import '_links.scss';
+@import '_type.scss';
+@import '_utility.scss';
+@import '_form.scss';
+
+// partials
+@import 'partials/_nav.scss';
+@import 'partials/_footer.scss';
+
+// page specific
+@import 'pages/_home.scss';
+@import 'pages/_sub.scss';

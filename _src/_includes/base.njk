@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="description" content="{{ description }}">
+
+  <title>{{ title }} {{ ' - ' if title|length }} Russell McMurtry, BFA – Web Designer & Developer</title>
+
+  <!-- \fonts -->
+  
+  <!-- /fonts -->
+
+  <!-- \css -->
+  {% block css %}
+    <link rel="stylesheet" href="/libs/bootstrap-5.1.0/dist/css/bootstrap.min.css">
+    {{ css | safe }}
+    <link rel="stylesheet" href="/css/main.css">
+  {% endblock %}
+  <!-- /css -->
+
+  <!-- \favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#1b1b1c">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="msapplication-TileColor" content="#1b1b1c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- /favicon -->
+
+  <!-- \analytics -->
+  
+  <!-- /analytics -->
+</head>
+
+<body class="pt-3">
+
+  <nav class="navbar navbar-light navbar-expand-lg mb-4 mb-lg-5">
+    <div class="container">
+
+      <a class="navbar-brand fade-link" href="/">
+        <img src="/images/structure/logos/rrjm-monogram.svg" alt="Russell Ross James McMurtry">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item text-center">
+              <a class="nav-link {{ 'active' if '/about' in page.url }}" href="/about">about</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link {{ 'active' if '/portfolio' in page.url }}" href="/portfolio">portfolio</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link {{ 'active' if '/contact' in page.url }}" href="/contact">contact</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {# <nav class="navbar navbar-light navbar-expand-lg mb-4 mb-lg-5">
+    <div class="container">
+
+      <a class="navbar-brand fade-link" href="/">
+        <img src="/images/structure/logos/rrjm-monogram.svg" alt="Russell Ross James McMurtry">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand fade-link" href="/">Russell McMurtry<a/></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body py-0">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item text-center">
+              <a class="nav-link {{ 'active' if '/about' in page.url }}" href="/about">about</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link {{ 'active' if '/portfolio' in page.url }}" href="/portfolio">portfolio</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link {{ 'active' if '/contact' in page.url }}" href="/contact">contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav> #}
+  
+  <main class="pb-5">
+    <div class="container">
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
+    </div>
+  </main>
+
+  {# <footer class="text-center mb-4">
+    <p class="text-muted"><small><script>document.write(new Date().getFullYear())</script> &bull; Always tinkering</small></p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card outline mb-4">
+            <div class="card-body">
+              <p class="mb-4">Let's chat!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> #}
+
+</body>
+
+
+<!-- \js -->
+{% block js %}
+  <script type="text/javascript" src="/libs/bootstrap-5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/libs/feathericons/feather.min.js"></script><script>feather.replace()</script>
+  <script src="/libs/emergence/js/emergence.min.js"></script><script>emergence.init({ reset: false });</script>
+  {{ js | safe }}
+  <script type="text/javascript" src="/js/functions.js"></script>
+{% endblock %}
+<!-- /js -->
+
+</body>
+</html>

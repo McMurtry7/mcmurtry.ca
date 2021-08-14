@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: Contact
+---
+
+<div class="row justify-content-center">
+  <div class="col-lg-6 col-md-8">
+    <h1 class="brand-serif">Contact</h1>
+    <p class="lead">I'd love to hear from you</p> 
+    <p class="mb-4">Please drop me a line below, on <a href="https://ca.linkedin.com/in/russell-mcmurtry-11b720107" target="_blank">LinkedIn</a>, or by email at <script language="JavaScript"> user = 'russell'; sitedomain = 'mcmurtry.ca'; document.write('<a href=\"mailto:' + user + '@' + sitedomain + '\">' + user + '@' + sitedomain + '</a>');</script></p>
+
+    <div class="card outline mb-5">
+      <div class="card-body">
+
+        <form name="contact" method="POST" action="/thank-you" netlify-honeypot="bot-field" data-netlify="true">
+          <p class="d-none">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          </p>
+          <div class="mb-2">
+            <label for="name" class="form-label">Your name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-2">
+            <label for="email" class="form-label">Your email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-2">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark mt-3">Submit</button>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</div>
