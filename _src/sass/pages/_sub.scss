@@ -206,6 +206,26 @@
     }
   }
 
+  &.lupi {
+    .portfolio-project__screenshot-mobile {
+      background-image: url('/images/content/portfolio/websites/lupi-mobile.jpg');
+    }
+
+    background-image: url('/images/content/portfolio/websites/lupi-home.jpg');
+    
+    &::before { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/lupi-custom.jpg'); 
+      }
+    }
+    &::after  { 
+      @media (min-width: 992px) { 
+        background-image: url('/images/content/portfolio/websites/lupi-available.jpg'); 
+        background-position: bottom;
+      }
+    }
+  }
+
   &:hover .portfolio-project__screenshot-mobile {
     transition: all 0.2s ease;
   }
