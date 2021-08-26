@@ -167,25 +167,6 @@
     }
   }
 
-  &.crs {
-    .portfolio-project__screenshot-mobile {
-      background-image: url('/images/content/portfolio/websites/canadian-retina-society-mobile.jpg');
-    }
-
-    background-image: url('/images/content/portfolio/websites/canadian-retina-society-home.jpg');
-    
-    &::before { 
-      @media (min-width: 992px) { 
-        background-image: url('/images/content/portfolio/websites/canadian-retina-society-archive.jpg'); 
-      }
-    }
-    &::after  { 
-      @media (min-width: 992px) { 
-        background-image: url('/images/content/portfolio/websites/canadian-retina-society-board.jpg'); 
-      }
-    }
-  }
-
   &.goharmonygo {
     .portfolio-project__screenshot-mobile {
       background-image: url('/images/content/portfolio/websites/goharmonygo-mobile.jpg');
