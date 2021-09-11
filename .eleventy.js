@@ -18,6 +18,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./_src/files");
   eleventyConfig.addPassthroughCopy("./_src/fonts");
   eleventyConfig.addPassthroughCopy("./_src/images");
+  eleventyConfig.addPassthroughCopy("./_src/files");
   eleventyConfig.addPassthroughCopy("./_src/js");
   eleventyConfig.addPassthroughCopy("./_src/libs");
 
