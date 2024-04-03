@@ -1,0 +1,120 @@
+---
+layout: base.njk
+title: Portfolio
+---
+
+<div class="row">
+  <div class="col-md-12">
+    <h5 class="text-muted mb-0">Portfolio</h5>
+    <h1 class="brand-serif">Data Tables in Workhub</h1>
+  </div>
+  <div class="col-md-10">
+    <p>Workhub's data tables have been difficult to use for some time. Not only were the data retrieval strategies creaking under their own weight, but a recent move to AWS was proving to be extremely expensive as well (for the same reasons!). Throw that in with a mountain of user feedback about the poor paginatory and other lacking features. The need was clear.</p>
+    <p class="mt-4"><strong>The Bet</strong><br />A new “virtual scrolling” table would be built with a new frontend design that would prioritize usability, utility, and actionability. Once a core feature set was established, all tables in the app (over 300) would be redesigned with the new design/development paradigm.</p>
+  </div>
+  <div class="col-md-2"><a class="btn btn-outline-dark mb-4" href="../../">Go back</a></div>
+</div>
+
+<hr class="dashed my-4" />
+
+<div class="row py-4 py-md-5">
+  <div class="col-lg-12 mb-4 mb-lg-5" style="position: relative; z-index: 1;">
+    <img src="/images/projects/data-tables/01.png" class="img-fluid super-shadow rounded-3" alt="">
+  </div>
+  <div class="col-lg-8 offset-lg-2 col-md-8 mb-4 mb-md-0" style="position: relative; z-index: 1;">
+    <div class="case-study-info">
+      <h5 class="mb-2">How bad could it be?</h5>
+      <p>The lack of function was subtle in some ways, and completely in your face in others. Basics like not announcing if a column is sortable, hiding how pagination worked, “chainsaw” alignment (when columns alternate between static sizes and fixed), and many different versions of table styling made it difficult for a user to know what to expect across a day of work.</p>
+      <p>I believed we could create a consistently designed set of cells paired with an upgrade in core functionality and data retrieval to give users a much more cohesive experience.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="dashed" />
+
+<div class="row py-4 py-md-5">
+  <div class="col-lg-12 mb-4 mb-lg-5" style="position: relative; z-index: 1;">
+    <img src="/images/projects/data-tables/02.png" class="img-fluid super-shadow rounded-3" alt="">
+  </div>
+  <div class="col-lg-8 offset-lg-2 col-md-8 mb-4 mb-md-0" style="position: relative; z-index: 1;">
+    <div class="case-study-info">
+      <h5 class="mb-2">Core functionality</h5>
+      <p>How a user set up their table (column width / column visibility), filtered/sorted the data, & returned after making changes to items was the first list of upgrades.</p>
+    </div>
+  </div>
+  <div class="col-lg-12 my-4 my-lg-5" style="position: relative; z-index: 1;">
+    <img src="/images/projects/data-tables/03.png" class="img-fluid super-shadow rounded-3" alt="">
+    <figcaption style="text-align: center;">Column selector + column headers</figcaption>
+  </div>
+  <div class="col-lg-8 offset-lg-2 col-md-8 mb-4 mb-md-0" style="position: relative; z-index: 1;">
+    <div class="case-study-info">
+      <p>The column selector was a massive hit with stakeholders/product owners. Paired with the simple pinning functionality (the pin icon in the top right locks your table configuration) it gives teams the ability to display information that might not be primary to every user, but could be configured to be optimally useful and actionable based on that users personal workflow.</p>
+      <p>Keeping pinning simple leaves lots of room in the future for a "custom filter" builder concept. A paid feature on our long-term roadmap.</p>
+      <p>Column can now be dragged to resize. While this meant we'd have to have a truncation strategy for every cell, the benefit to the user was high. Columns also announce their sortability now, giving users this knowledge without a time-consuming click.</p>
+      <p><a href="https://www.figma.com/file/MS55iohbSNcfmlIqQv3KRZ/Admin-Incidents-%26-Hazards-Data-Tables?type=design&node-id=0%3A1&mode=design&t=wHGu9vdN4tImCSCp-1" target="_blank">Check out a table project exmple in Figma here</a></p>
+    </div>
+  </div>
+  <div class="col-lg-12 my-4 my-lg-5" style="position: relative; z-index: 1;">
+    <img src="/images/projects/data-tables/04.png" class="img-fluid super-shadow rounded-3" alt="">
+    <figcaption style="text-align: center;">Fractional distribution with minimum widths (and horizontal scroll below that) eliminates chainsawing</figcaption>
+  </div>
+  <div class="col-lg-8 offset-lg-2 col-md-8 mb-4 mb-md-0" style="position: relative; z-index: 1;">
+    <div class="case-study-info">
+      <p>While it's certainly nothing new to the web, fraction distribution has made a massive increase to the readability of a table row. All table cells were designed with a line-return and truncation strategy to accommodate this.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="dashed" />
+
+<div class="row py-4 py-md-5">
+  <div class="col-lg-12 mb-4 mb-lg-5" style="position: relative; z-index: 1;">
+    <img src="/images/projects/data-tables/05.png" class="img-fluid super-shadow rounded-3" alt="">
+    <figcaption><a class="" href="https://www.figma.com/file/6zYcxDiYwi0JJMTTCSMmTJ/Admin-Safety-Meetings-Data-Tables?type=design&node-id=0%3A1&mode=design&t=7ce9D2LOx4hnTcUQ-1" target="_blank">View the Figma file</a></figcaption>
+  </div>
+  <div class="col-lg-8 offset-lg-2 col-md-8 mb-4 mb-md-0" style="position: relative; z-index: 1;">
+    <div class="case-study-info">
+      <h5 class="mb-2">Sectioning, oh for where art thou sectioning?</h5>
+      <p>This was a massive point of contention between product owners. Workhub has had lots of different UI over the years trying to solve this problem (collapsible sections, indefinite indenting, + many more). We opted for a simple three-level light indent matched up to sticky headers with hot keys that jump between.</p>
+      <p>This had immediate positive feedback in demos and continues to perform well with users in the wild.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="dashed" />
+
+<div class="row py-4 py-md-5">
+  <div class="col-lg-12 mb-4 mb-lg-5" style="position: relative; z-index: 1;">
+    <img src="/images/projects/data-tables/06.png" class="img-fluid super-shadow rounded-2" alt="">
+    <figcaption><a class="" href="https://www.figma.com/file/ZlGu1CyVNxFOZi76VEBviA/Data-Table-Figma-Variant?type=design&node-id=0%3A1&mode=design&t=O12pXeEbpzFkLCGY-1" target="_blank">View the Figma variant</a></figcaption>
+  </div>
+  <div class="col-lg-8 offset-lg-2 col-md-8 mb-4 mb-md-0" style="position: relative; z-index: 1;">
+    <div class="case-study-info">
+      <h5 class="mb-2">All the cells, everywhere, all at once</h5>
+      <p>You’ve probably gotten a good sense of the type of cell consistency I was aiming for with this new global control. I built the massively useful (and massively complex) table cell Figma control that handles all the styling consistency. The goal was to collect all the modern iterations of our molecule usage and capture them here. This would allow me granular control over the truncating behaviour mentioned above as well as indenting, shadows, and other highly specific stylings in the UI.</p>
+      <p>The ultimate goal was to provide a tool that faded into the background while other talented designers plied their craft building useful and actionable tables.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="dashed" />
+
+<div class="row py-4 py-md-5">
+  <div class="col-lg-12 mb-4 mb-lg-5" style="position: relative; z-index: 1;">
+    <img src="/images/projects/data-tables/07.png" class="img-fluid super-shadow rounded-2" alt="">
+    <figcaption><a class="" href="https://www.figma.com/file/caGzgtVpgRN882YkFNeUZz/Admin-Online-Training-List-Table?type=design&node-id=0%3A1&mode=design&t=vhOZ24XSXeLaWZ3Y-1" target="_blank">View the Figma file</a></figcaption>
+  </div>
+  <div class="col-lg-8 offset-lg-2 col-md-8 mb-4 mb-md-0" style="position: relative; z-index: 1;">
+    <div class="case-study-info">
+      <h5 class="mb-2">Where are we at on this?</h5>
+      <p>The tables have shipped to approximately 25% of tables on the admin side of the app. Specifically in the "Form Tools" component team. The goal is to have over 90% shipped by the end of Q3. The most used components in Workhub are up next (like Online Training above)!</p>
+      <p>Realigning the design team on the concepts of utility and actionability will continue to improve the day-to-day actions of our users - this is already being reflected in the types of feedback we're hearing now (more column requests and less bugs!).</p>
+    </div>
+  </div>
+</div>
+
+<hr class="dashed mb-5" />
+
+<div class="d-flex justify-content-center">
+  <a class="btn btn-outline-dark mb-4" href="../../">Go back to case studies</a>
+</div>
