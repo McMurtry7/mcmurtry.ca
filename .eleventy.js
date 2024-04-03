@@ -4,10 +4,10 @@ const purgeCssPlugin = require("eleventy-plugin-purgecss");
 module.exports = function(eleventyConfig) {
 
   //plugin
-  // eleventyConfig.addPlugin(purgeCssPlugin, {
-  //   config: "./purgecss.config.js",
-  //   quiet: false,
-  // });
+  eleventyConfig.addPlugin(purgeCssPlugin, {
+    config: "./purgecss.config.js",
+    quiet: false,
+  });
 
   //sass
   eleventyConfig.addWatchTarget("./_src/sass");
